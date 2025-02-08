@@ -68,7 +68,7 @@ body
 .page
 {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - clamp(1rem, 10vh, 3rem));
     width: 100vw;
     background-color: var(--color-bg);
 }
@@ -155,7 +155,11 @@ body
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    height: calc(100vh - clamp(1rem, 10vh, 3rem) - 15vh*2);
+    width: 100%;
+    align-content: center;
+    column-gap: clamp(1rem, 20vw, 40rem);
 }
 
 .enum-entry
@@ -163,8 +167,8 @@ body
     border-bottom: 2px var(--color-text) solid;
     max-width: clamp(10rem, 40vw, 20rem);
     z-index: 1;
-    padding-top: 8vh;
     min-width: clamp(5rem, 30vw, 15rem);
+    padding-top: 8vh;
 }
 
 .enum-entry p
