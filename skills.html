@@ -9,6 +9,7 @@
     <title>Nicolas' Skills</title>
 
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -24,11 +25,13 @@
             <div class="logo-container">
             </div>
             <div class="links-container">
-                <a href="home.html">Home</a>
-                <a href="skills.html">Skills</a>
-                <a href="projects.html">Projects</a>
-                <a href="contact.html">Contact</a>
+                <a href="home.html" class="nav-link">Home</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </div>
+            <i class="fa-solid fa-bars fa-2xl" id="burger-shw" onclick="burger_show()"></i>
+            <i class="fa-solid fa-xmark fa-2xl hide" id="burger-cls" onclick="burger_close()"></i>
         </nav>
     </header>
     <section class="page">

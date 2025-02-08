@@ -4,28 +4,13 @@
     box-sizing: border-box;
     color: var(--color-text);
     font-family: "Roboto", serif;
-
-    --w:calc(1/(1 - var(--_x))); /* element width */
-    --h:calc(1/(1 - var(--_y))); /* element height */
-    timeline-scope: --cx,--cy;
-    animation: x linear,y linear;
-    animation-timeline: --cx,--cy;
-    animation-range: entry 100% exit 100%;
-}
-
-*:before {
-    content:"";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 1px;
-    aspect-ratio: 1;
-    view-timeline: --cx inline,--cy block;
 }
 
 body
 {
-    padding-top: clamp(1rem, 10vh, 3rem);
+    /*padding-top: clamp(1rem, 10vh, 3rem);*/
+    /* With normal bar, the height is 40 (inner) + 2*5 (padding) = 50px. */
+    padding-top: 50px;
 }
 
 .nav-bar
@@ -33,7 +18,7 @@ body
     overflow: hidden;
     background-color: #b0deffa6;
     border-bottom: 1px var(--color-border) solid;
-    height: clamp(1rem, 10vh, 3rem);
+    /*height: clamp(1rem, 10vh, 3rem);*/
     width: 100%;
     position: fixed;
     top: 0;
@@ -82,8 +67,27 @@ body
     -webkit-animation: Animation 5s ease infinite;
     -moz-animation: Animation 5s ease infinite;
     animation: Animation 5s ease infinite;
-    padding: calc(1em/2 - 4px);
     font-weight: bold;
+}
+
+/* We can't use a class for burger-* or it will mess the properties. */
+
+#burger-shw
+{
+    display: none;
+    text-align: center;
+    align-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+#burger-cls
+{
+    display: none;
+    text-align: center;
+    align-content: center;
+    width: 40px;
+    height: 40px;
 }
 
 .page
@@ -242,30 +246,6 @@ footer *
     100%{background-position:10% 0%}
 }
 
-@property --_x {
-    syntax: "<number>";
-    inherits: true;
-    initial-value: 0; 
-}
-
-@property --_y {
-    syntax: "<number>";
-    inherits: true;
-    initial-value: 0; 
-}
-
-@property --w {
-    syntax: "<integer>";
-    inherits: true;
-    initial-value: 0; 
-}
-
-@property --h {
-    syntax: "<integer>";
-    inherits: true;
-    initial-value: 0; 
-}
-
 :root {
     --color-bg: #fff;
     --color-fg: #dfdfdf;
@@ -300,4 +280,76 @@ footer *
         --color-text-dark: #F6F6F6;
         --color-bg-dark: #383835;
     }
+}
+
+@media (max-aspect-ratio: 3/4) {
+    .nav-bar
+    {
+        align-items: normal;
+        flex-wrap: wrap;
+    }
+    .links-container
+    {
+        order: 2;
+        width: 100%;
+        flex-direction: column;
+    }
+    .links-container a
+    {
+        display: none;
+    }
+    #burger-shw
+    {
+        display: inline-block;
+    }
+    #burger-cls
+    {
+        display: inline-block;
+    }
+    .page
+    {
+        height: auto;
+    }
+    .page-band
+    {
+        position: absolute;
+        height: 70%;
+        width: var(--size-band);
+        margin: 15vh 0;
+        background-color: var(--color-page-band);
+    }
+    .enum-entries
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-bottom: 8vh;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .enum-entry
+    {
+        border-bottom: 2px var(--color-text) solid;
+        width: 70vw;
+        z-index: 1;
+        padding-top: 8vh;
+    }
+}
+
+.hide
+{
+    display: none !important;
+}
+
+.show
+{
+    display: inline-block !important;
+}
+
+.mark
+{
+    width: 40px;
+    height: 40px;
+    background: red;
 }
