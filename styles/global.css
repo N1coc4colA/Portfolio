@@ -93,7 +93,7 @@ body
 .page
 {
     position: relative;
-    height: calc(100vh - clamp(1rem, 10vh, 3rem));
+    min-height: calc(100vh - 50px);
     width: 100vw;
     background-color: var(--color-bg);
 }
@@ -135,20 +135,25 @@ body
 
 .project-entries
 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: calc(calc(100vh) - calc(50px));
+    flex-direction: row;
+    gap: calc(10%/2);
     width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    align-content: normal;
+    padding: 10px;
+    padding-left: calc(10vw/4);
+    padding-right: calc(10vw/4);
 }
 
 .project-entry
 {
     border-radius: 5px;
     transform: scale(1);
+    width: 30%;
+    min-height: 40vh;
 }
 
 .project-entry p
@@ -334,6 +339,43 @@ footer *
         width: 70vw;
         z-index: 1;
         padding-top: 8vh;
+    }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    .project-entries
+    {
+        row-gap: 4vh;
+        column-gap: calc(10%);
+    }
+    .project-entry
+    {
+        width: 45%;
+        height: 45vh;
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .project-entries
+    {
+        flex-direction: column;
+    }
+    .project-entry
+    {
+        width: 80%;
+        height: 40vh;
+    }
+}
+
+@media (max-aspect-ratio: 2/3) {
+    .nav-bar
+    {
+        background-color: var(--color-clay-pink);
+    }
+    .project-entry
+    {
+        min-height: 0;
+        height: 30vh;
     }
 }
 
