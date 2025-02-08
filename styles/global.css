@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-text);
+    font-family: "Roboto", serif;
+
+    --w:calc(1/(1 - var(--_x))); /* element width */
+    --h:calc(1/(1 - var(--_y))); /* element height */
+    timeline-scope: --cx,--cy;
+    animation: x linear,y linear;
+    animation-timeline: --cx,--cy;
+    animation-range: entry 100% exit 100%;
+}
+
+*:before {
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    aspect-ratio: 1;
+    view-timeline: --cx inline,--cy block;
+}
+
+body
+{
+    padding-top: clamp(1rem, 10vh, 3rem);
+}
+
+.nav-bar
+{
+    overflow: hidden;
+    background-color: #b0deffa6;
+    border-bottom: 1px var(--color-border) solid;
+    height: clamp(1rem, 10vh, 3rem);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    backdrop-filter: blur(7px);
+}
+  
+.nav-bar a
+{
+    float: left;
+    color: var(--color-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    height: clamp(1rem, 10vh, 3rem);
+}
+
+.nav-bar a:hover
+{
+    background-color: var(--color-fg);
+    color: var(--color-text);
+}
+
+.nav-bar a.active
+{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.page
+{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-bg);
+}
+
+.w-band
+{
+    padding-left: var(--size-band);
+}
+
+.page-band
+{
+    position: absolute;
+    height: 70vh;
+    width: var(--size-band);;
+    margin: 15vh 0;
+    background-color: var(--color-page-band);
+}
+
+.page h1
+{
+    font-family: "Source Code Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: clamp(2rem, 5vw, 3rem);
+
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+
+    position: relative;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 10px;
+}
+
+.project-entries
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.project-entry
+{
+    border-radius: 5px;
+    transform: scale(1);
+}
+
+.project-entry p
+{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 0;
+    backdrop-filter: blur(5px);
+}
+
+.project-entry img
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    border: 1px var(--color-border) solid;
+}
+
+.enum-entries
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enum-entry
+{
+    border-bottom: 2px var(--color-text) solid;
+    max-width: clamp(10rem, 40vw, 20rem);
+    z-index: 1;
+    padding-top: 8vh;
+    min-width: clamp(5rem, 30vw, 15rem);
+}
+
+.enum-entry p
+{
+    border: none;
+    margin: 10px;
+}
+
+@property --_x {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0; 
+}
+
+@property --_y {
+    syntax: "<number>";
+    inherits: true;
+    initial-value: 0; 
+}
+
+@property --w {
+    syntax: "<integer>";
+    inherits: true;
+    initial-value: 0; 
+}
+
+@property --h {
+    syntax: "<integer>";
+    inherits: true;
+    initial-value: 0; 
+}
+
+:root {
+    --color-bg: #fff;
+    --color-fg: #dfdfdf;
+    --color-text: #000;
+    --color-page-band: #fff67d;
+    --color-clay-pink: #F3A1DB;
+    --color-clay-yellow: #FFE797;
+    --color-clay-sky: #ADE0FF;
+    --size-band: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #383835;
+        --color-fg: #454545;
+        --color-text: #F6F6F6;
+        --color-border: #5E5E5E;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-bg: #FFFFFF;
+        --color-fg: #FDFDFD;
+        --color-text: #262626;
+        --color-border: #D9D9D9;
+    }
+}
