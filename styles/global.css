@@ -377,6 +377,10 @@ footer *
         min-height: 0;
         height: 30vh;
     }
+    .enum-entry
+    {
+        max-width: 100%;
+    }
 }
 
 .hide
