@@ -41,7 +41,6 @@ body
 {
     width: var(--size-burger);
     height: var(--size-burger);
-    background: red;
 }
 
 .nav-link
@@ -285,6 +284,7 @@ body
 .btn-blue, .btn-red, .btn-green, .btn-blue *, .btn-red *, .btn-green *
 {
     color: var(--color-text-dark);
+    text-decoration: none;
 }
 
 .btn-red
