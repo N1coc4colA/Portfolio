@@ -9,6 +9,7 @@
     <title>Nicolas 's Portfolio</title>
 
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -19,34 +20,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gabarito:wght@400..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="nav-bar">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-    </nav>
-    <div class="page">
-        <div class="page-band"></div>
-        <h1>
-            The languages I already used
-        </h1>
-        <div class="enum-entries w-band">
-            <div class="enum-entry"><p>Item No. X</p></div>
-            <div class="enum-entry"><p>Item No. X</p></div>
-            <div class="enum-entry"><p>Item No. X</p></div>
-            <div class="enum-entry"><p>Item No. X</p></div>
-            <div class="enum-entry"><p>Item No. X</p></div>
-        </div>
-    </div>
-    <div class="page">
-        <div class="project-entries">
-            <div class="project-entry"><img src="assets/projects/1.jpg" alt="Image"><p>Item No. X</p></div>
-            <div class="project-entry"><img src="assets/projects/1.jpg" alt="Image"><p>Item No. X</p></div>
-            <div class="project-entry"><img src="assets/projects/1.jpg" alt="Image"><p>Item No. X</p></div>
-            <div class="project-entry"><img src="assets/projects/1.jpg" alt="Image"><p>Item No. X</p></div>
-            <div class="project-entry"><img src="assets/projects/1.jpg" alt="Image"><p>Item No. X</p></div>
-        </div>
-    </div>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-container">
+            </div>
+            <div class="links-container">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="skills.html" class="nav-link">Skills</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars fa-2xl" id="burger-shw" onclick="burger_show()"></i>
+            <i class="fa-solid fa-xmark fa-2xl hide" id="burger-cls" onclick="burger_close()"></i>
+        </nav>
+    </header>
+    <section class="page">
+        <form class="contact-container" action="index.html">
+            <label for="fname">First Name</label>
+            <input type="text" id="contact-fname" name="firstname" maxlength="40" placeholder="John">
+            <label for="lname">Last Name</label>
+            <input type="text" id="contact-lname" name="lastname" maxlength="40" placeholder="Doe">
+            <label for="country">Country</label>
+            <select id="contact-country" name="country">
+                <option value="none">None</option>
+                <option value="australia">Australia</option>
+                <option value="belgium">Belgium</option>
+                <option value="canada">Canada</option>
+                <option value="france">France</option>
+                <option value="french-polynesia">French Polynesia</option>
+                <option value="germany">Germany</option>
+                <option value="nederland">Nederland</option>
+                <option value="sweden">Sweden</option>
+                <option value="usa">United States of America</option>
+            </select>
+            <label for="subject">Last Name</label>
+            <input type="text" id="contact-subject" name="subject" maxlength="50" placeholder="Something special happened">
+            <label for="message">Message</label>
+            <textarea id="contact-message" name="message" maxlength="250" placeholder="Hello, I contact you regarding.."></textarea>
+            <button type="submit" value="Submit" class="btn-green" id="contact-submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Send
+            </button>
+          </form>
+    </section>
+    <footer>
+        <p>GPL v3+, Pictures: Nicolas Badin All Rights Reserved.</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
