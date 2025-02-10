@@ -90,7 +90,43 @@ Ce projet consiste à créer un site web personnel servant de portfolio. Il pré
 | Clay Yellow | FFE797 |
 | Clay Cyan | B4F3E7 |
 | Clay Pink | F3A1DB |
-| Clay Sky | ADE0FF |
+| Clay Sky | B0DEFFA6 |
+| Page Band | fff67d |
+| Green | 00CC55 |
+| Green Border | 5CEB8C |
+| Blue | 327AFF |
+| Blue Border | 63CBFF |
+| Red | F21212 |
+| Red Border | FF6A6A |
+
+| Nom | Valeur |
+|--|--|
+| Band Width | 20px |
+| Normal Margin | 5px |
+| Normal Padding | Normal Margin |
+| Button Border | 2px |
+| Active Button Border | 5px |
+| Normal Border | 2px |
+| Active Border | 3px |
+| Light Border | 1px |
+| Entry Border | 2px |
+| Burger Size | 40px |
+| Bar Padding | Normal Padding |
+| Bar Height | 2*(Bar Padding) + (Burger Size) |
+| Button Height (Min) | 30px |
+| Button Width (Min) | 6em |
+| Project Rounding | Normal Rounding |
+| Normal Rounding | Normal Padding |
+| Pill Rounding | 10000000px |
+| Navbar Padding | Normal Padding |
+| Navbar blur | 8px |
+| Normal Blur | 5px |
+| Normal Animation Duration | 5s |
+| Social Button | 30px |
+| Social Button Margin | Normal Margin |
+| Social Button Padding | 0 |
+| Social Bar Width | 12*(Social Button Margin) + 12*(Social Button Padding) + 6*(Social Button) |
+| Social Bar Height | 2*(Social Button Margin) + 2*(Social Button Padding) + (Social Button) |
 
 #### **Clair**
 
@@ -100,6 +136,9 @@ Ce projet consiste à créer un site web personnel servant de portfolio. Il pré
 | Foreground | #FDFDFD |
 | Text | #262626 |
 | Border | #D9D9D9 |
+| Dark Text | #F6F6F6 |
+| Dark Background | #383835 |
+| Button Text | #3E3E3E |
 
 #### **Sombre**
 
@@ -109,6 +148,9 @@ Ce projet consiste à créer un site web personnel servant de portfolio. Il pré
 | Foreground | #454545 |
 | Text | #F6F6F6 |
 | Border | #5E5E5E |
+| Dark Text | #262626 |
+| Dark Background | #FFFFFF |
+| Button Text | #C7C7C7 |
 
 ### **5.2 Typographie**
 
@@ -132,7 +174,7 @@ Ce projet consiste à créer un site web personnel servant de portfolio. Il pré
 - **RGPD** :
 -- Consentement clair avant la collecte de données, s'il y a lieu.
 -- Option de suppression des données pour l’utilisateur, s'il y a lieu.
-- **Mentions légales** : Fournir une page dédiée avec les informations légales nécessaires.
+- **Mentions légales** : Fournir les informations légales nécessaires.
 
 ### **7. Livrables**
 
