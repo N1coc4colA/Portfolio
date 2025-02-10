@@ -9,15 +9,15 @@
 <rect x="6.5" y="5.5" width="39" height="39" fill="#D9D9D9" stroke="black"/>
 <rect x="0.5" y="450.5" width="999" height="49" fill="#F5F5F5" stroke="black"/>
 <rect x="125.5" y="460.5" width="749" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="345.5" y="304.5" width="129" height="39" rx="19.5" fill="#D9D9D9" stroke="black"/>
-<rect x="522.5" y="304.5" width="129" height="39" rx="19.5" fill="#D9D9D9" stroke="black"/>
-<rect x="61.5" y="299.5" width="249" height="49" fill="#F5F5F5" stroke="black"/>
-<rect x="71.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="111.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="151.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="191.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="231.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
-<rect x="271.5" y="309.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="61.5" y="250.5" width="129" height="39" rx="19.5" fill="#D9D9D9" stroke="black"/>
+<rect x="238.5" y="250.5" width="129" height="39" rx="19.5" fill="#D9D9D9" stroke="black"/>
+<rect x="61.5" y="323.5" width="249" height="49" fill="#F5F5F5" stroke="black"/>
+<rect x="71.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="111.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="151.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="191.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="231.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
+<rect x="271.5" y="333.5" width="29" height="29" fill="#D9D9D9" stroke="black"/>
 <rect x="231.5" y="120.5" width="420" height="102" fill="#FDFDFD" stroke="black"/>
 <path d="M188.5 159C188.5 194.07 160.07 222.5 125 222.5C89.9299 222.5 61.5 194.07 61.5 159C61.5 123.93 89.9299 95.5 125 95.5C160.07 95.5 188.5 123.93 188.5 159Z" fill="#F5F5F5" stroke="black"/>
 </svg>
