@@ -158,6 +158,7 @@ body
     transform: scale(1);
     width: 30%;
     min-height: 40vh;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.1);
 }
 
 .project-entry p
@@ -168,11 +169,12 @@ body
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     border-radius: var(--round-project);
     margin: 0;
     backdrop-filter: blur(var(--blur-normal));
+    border: var(--size-light-border) var(--color-text) solid;
+    background-color: var(--color-bg-dark-trans);
 }
 
 .project-entry img
@@ -548,6 +550,7 @@ footer *
         --color-border: #5E5E5E;
         --color-text-dark: #262626;
         --color-bg-dark: #FFFFFF;
+        --color-bg-dark-trans: #FFFFFF94;
         --color-btn-text: #c7c7c7;
     }
 }
@@ -560,6 +563,7 @@ footer *
         --color-border: #D9D9D9;
         --color-text-dark: #F6F6F6;
         --color-bg-dark: #383835;
+        --color-bg-dark-trans: #38383594;
         --color-btn-text: #3e3e3e;
     }
 }
