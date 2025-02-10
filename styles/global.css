@@ -159,6 +159,12 @@ body
     width: 30%;
     min-height: 40vh;
     box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2),0 10px 10px 0 rgba(0,0,0,0.1);
+    transition: all .1s ease-in-out;
+}
+
+.project-entry:hover
+{
+    transform: scale(1.05);
 }
 
 .project-entry p
@@ -432,6 +438,12 @@ body
     width: 128;
     border-radius: var(--round-pill);
     border: var(--size-normal-border) var(--color-border) solid;
+    transition: all .1s ease-in-out;
+}
+
+.desc-card img:hover
+{
+    box-shadow: 0 0 10px 10px #fff, 0 0 15px 5px #f0f, 0 0 20px 20px #0ff;
 }
 
 .desc-card p
