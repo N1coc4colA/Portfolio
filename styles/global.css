@@ -529,7 +529,7 @@ footer *
     --size-button-width: 6em;
     --size-social: 30px;
     --size-social-margin: var(--size-margin-normal);
-    --size-social-bar-width: calc(2*6*var(--size-social-margin) + 2*6*var(--size-social-padding) + 6*var(--size-social-width));
+    --size-social-bar-width: calc(2*6*var(--size-social-margin) + 2*6*var(--size-social-padding) + 6*var(--size-social));
     --size-social-bar-height: calc(2*var(--size-social-margin) + 2*var(--size-social-padding) + var(--size-social-height));
     --round-project: var(--size-padding-normal);
     --round-normal: var(--size-padding-normal);
