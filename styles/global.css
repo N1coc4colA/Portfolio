@@ -6,6 +6,11 @@
     font-family: "Roboto", serif;
 }
 
+html
+{
+    background-color: var(--color-bg);
+}
+
 body
 {
     padding-top: var(--size-bar);
@@ -178,7 +183,7 @@ body
     left: 10px;
 }
 
-.project-entry p, .project-entry .site, .project-entry .code-site
+.project-entry p, .project-entry .site, .project-entry .code-site, .project-entry .desc-project
 {
     color: white;
     font-size: 1rem;
@@ -187,8 +192,13 @@ body
     border-radius: var(--round-project);
     margin: 0;
     backdrop-filter: blur(var(--blur-normal));
-    border: var(--size-light-border) var(--color-text) solid;
+    border: var(--size-light-border) var(--color-border) solid;
     background-color: var(--color-bg-dark-trans);
+}
+
+.project-entry p
+{
+    border: var(--size-light-border) var(--color-text) solid;
 }
 
 .project-entry .site, .project-entry .code-site
@@ -223,9 +233,9 @@ body
 .project-entry .site, .project-entry .code-site
 {
     background-color: var(--color-fg);
-    color: var(--color-text);
+    color: var(--color-btn-text);
     text-decoration: none;
-    border-color: var(--color-btn-text);
+    border-color: var(--color-border);
 }
 
 .project-entry .desc-project, .project-entry .site, .project-entry .code-site
