@@ -1,88 +1,340 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keyword" content="portfolio, esiea, nicolas, badin, n1coc4cola, 3A, apprentissage">
 
-    <meta name="description" content="Portfolio de Badin N.">
-    <meta name="keyword" content="portfolio, esiea, nicolas, badin, n1coc4cola, 3A, apprentissage">
-    <title>Nicolas' Portfolio</title>
+        <title>Portfolio Nicolas Badin</title>
 
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/favicon.png" type="image/png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Gabarito:wght@400..900&family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="nav-bar">
-            <img class="logo-container" src="assets/favicon.svg" alt="nop">
-            <div class="links-container">
-                <a href="index.html" class="nav-link" lang="en">Home</a>
-                <a href="index.html" class="nav-link" lang="fr">Accueil</a>
-                <a href="skills.html" class="nav-link" lang="en">Skills</a>
-                <a href="skills.html" class="nav-link" lang="fr">Skills</a>
-                <a href="projects.html" class="nav-link" lang="en">Projects</a>
-                <a href="projects.html" class="nav-link" lang="fr">Projets</a>
+        <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="styles/global.css">
+    </head>
+    <body>
+        <!-- En-tête et navigation -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="easy-cols">
+                        <img class="logo-container rot-15" src="assets/favicon.svg" alt="nop">
+                        <div class="logo">Nicocacola</div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#accueil" class="nav-link active" data-section="accueil">Accueil</a></li>
+                        <li><a href="#competences" class="nav-link" data-section="competences">Compétences</a></li>
+                        <li><a href="#projets" class="nav-link" data-section="projets">Projets</a></li>
+                    </ul>
+                </nav>
             </div>
-            <i class="fa-solid fa-bars fa-2xl" id="burger-shw" onclick="burger_show()"></i>
-            <i class="fa-solid fa-xmark fa-2xl hide" id="burger-cls" onclick="burger_close()"></i>
-        </nav>
-    </header>
-    <main>
-        <section class="page centered w-left-padding">
-            <article class="desc-card">
-                <img src="assets/me.jpg" width="128px" height="128px" alt="Github Profile picture">
-                <p lang="en">Hello, I'm Nicolas. Currently, I'm a CS Engineer student. I like things to be Open Source. I like C++. I also like Oat Milk.</p>
-                <p lang="fr">Hello, I'm Nicolas. Currently, I'm a CS Engineer student. I like things to be Open Source. I like C++. I also like Oat Milk.</p>
-            </article>
-            <div class="btn-container">
-                <div class="dl-bar">
-                    <a class="btn-green" href="assets/CV.pdf" aria-label="Download CV file" lang="en">
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                        My Resume
-                    </a>
-                    <a class="btn-green" href="assets/CV.pdf" aria-label="Download CV file" lang="fr">
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                        Mon CV
-                    </a>
-                    <a class="btn-blue" href="mailto:contact.corrosive647@passmail.net" aria-label="Go to Contact page">
-                        Contact
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </a>
+        </header>
+
+        <!-- Section Accueil -->
+        <section id="accueil" class="active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1>Salut, je suis <span class="highlight">Nicolas Badin</span></h1>
+                        <h2>Étudiant, futur ingénieur</h2>
+                        <p></p>
+                        <a href="assets/CV.pdf" target="_blank" class="cta-button">Mon CV</a>
+                        <a href="#projets" data-section="projets" class="cta-button easy-link">Voir mes projets</a>
+                        <div class="social-links">
+                            <a class="social-link" href="mailto:contact.corrosive647@passmail.net" aria-label="Contact through mail">
+                                <i class="fa-solid fa-square-envelope"></i>
+                            </a>
+                            <a class="social-link" href="https://github.com/N1coc4colA" aria-label="Go to Nicolas' Github page">
+                                <i class="fa-brands fa-square-github"></i>
+                            </a>
+                            <a class="social-link" href="https://fr.linkedin.com/in/nicolas-badin-b45952253" aria-label="Go to Nicolas' LinkedIn page">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                            <a class="social-link" href="https://www.instagram.com/n1coc4cola/" aria-label="Go to Nicolas' Instagram page">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                            <a class="social-link" href="https://signal.me/#eu/W2z6zYn1EaKN1dR3FspzzvipA6wQeaL7keXNorw9reZ46WirdVdH3K_GtLQw_7JU" aria-label="Contact through Signal app">
+                                <i class="fa-brands fa-signal-messenger"></i>
+                            </a>
+                            <a class="social-link" href="https://t.me/n1coc4cola" aria-label="Contact through Telegram app">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="assets/me.jpg" alt="Photo de profil" class="profile-image">
+                    </div>
                 </div>
-                <div class="social-bar">
-                    <a class="social-link" href="mailto:contact.corrosive647@passmail.net" aria-label="Contact through mail">
-                        <i class="fa-solid fa-square-envelope"></i>
-                    </a>
-                    <a class="social-link" href="https://github.com/N1coc4colA" aria-label="Go to Nicolas' Github page">
-                        <i class="fa-brands fa-square-github"></i>
-                    </a>
-                    <a class="social-link" href="https://fr.linkedin.com/in/nicolas-badin-b45952253" aria-label="Go to Nicolas' LinkedIn page">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a class="social-link" href="https://www.instagram.com/n1coc4cola/" aria-label="Go to Nicolas' Instagram page">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                    <a class="social-link" href="https://signal.me/#eu/W2z6zYn1EaKN1dR3FspzzvipA6wQeaL7keXNorw9reZ46WirdVdH3K_GtLQw_7JU" aria-label="Contact through Signal app">
-                        <i class="fa-brands fa-signal-messenger"></i>
-                    </a>
-                    <a class="social-link" href="https://t.me/n1coc4cola" aria-label="Contact through Telegram app">
-                        <i class="fa-brands fa-telegram"></i>
-                    </a>
+
+                <div class="about-me">
+                    <h2>À propos de moi</h2>
+                    <p>
+                        J'ai commencé en 4ème, avec du développement de petites pages internet. En 3ème, j'ai commencé à coder en C++. Je suis intéressé par les langages de programmation, l'optimisation de code, la sécurité. Aujourd'hui, je suis en cursus ingénieur, en 1ère année à l'ESIEA. En dehors de tout ça, je suis intéressé par le dessin (sans ordinateur) et je fais du badminton.
+                    </p>
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
-        <p>GPL v3+</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+
+        <!-- Skills section -->
+        <section id="competences">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Mes Compétences</h1>
+                    <p>Voici les compétences que j'ai développées pour créer des solutions numériques.</p>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-title">Développement Front-end</div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>HTML5 & CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Design Responsive</li>
+                            <li>Animations & interactions</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-title">Design UI/UX</div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Wireframe & Prototypage</li>
+                            <li>Design System</li>
+                            <li>Figma</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚙️</div>
+                            <div class="skill-title">Développement Back-end</div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>C, C++, Python, Java</li>
+                            <li>Qt, QML</li>
+                            <li>MySQL, PostgreSQL</li>
+                            <li>PHP</li>
+                            <li>Authentification & Sécurité</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-title">Outils & Méthodologies</div>
+                        </div>
+                        <ul class="skill-list">
+                            <li>Docker</li>
+                            <li>Git, GitHub</li>
+                            <li>Méthodologies Agile, SCRUM</li>
+                            <li>Performance & Optimisation</li>
+                            <li>Tests & Debogage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projets">
+            <div class="container">
+                <div class="section-header">
+                    <h1>Projets Récents</h1>
+                    <p>Découvrez quelques uns des projets que j'ai réalisé!</p>
+                </div>
+
+                <div class="projects-container">
+                    <div class="project-card">
+                        <img src="assets/projects/tasker.png" alt="Projet E-commerce" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">Tasker</h3>
+                            <p>Plateforme de gestion de projets avec tickets.</p>
+                            <div class="project-tags">
+                                <span class="tag">Symfony</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/Tasker" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                                <a href="https://tasker.nicolas-badin.com" target="_blank" class="btn btn-demo">
+                                    <span class="btn-icon">▶</span> Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/ether.net.png" alt="Projet ether.net" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">ether.net</h3>
+                            <p>Application web test pour faire un réseau social.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/ether.net" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                                <a href="https://ether.net.nicolas-badin.com" target="_blank" class="btn btn-demo">
+                                    <span class="btn-icon">▶</span> Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/webcal.png" alt="Projet WebCal" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">WebCal</h3>
+                            <p>Application de réservation de créneaux horaire pour particuliers.</p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/WebCal" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                                <a href="https://webcal.nicolas-badin.com" target="_blank" class="btn btn-demo">
+                                    <span class="btn-icon">▶</span> Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/aig.png" alt="Projet AIG" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">AIG</h3>
+                            <p>Application web pour tester JavaSpring. Connexion aux API d'OpenAI pour générer du contenu.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaSpring</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/AIG" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                                <a href="https://aig.nicolas-badin.com" target="_blank" class="btn btn-demo">
+                                    <span class="btn-icon">▶</span> Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/portfolio.png" alt="Projet E-commerce" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">Portfolio</h3>
+                            <p>Mon site-portfolio, que vous visitez actuellement.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/Portfolio" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                                <a href="https://nicolas-badin.com" target="_blank" class="btn btn-demo">
+                                    <span class="btn-icon">▶</span> Voir la démo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/mobibraille.png" alt="Projet MobiBraille" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">MobiBraille</h3>
+                            <p>
+                                Une imprimante braille pour un concours, en équipe de 4. Envoi du texte en Bluetooth.
+                                Réalisation d'une app Android pour l'envoi du texte vers l'imprimante via Bluetooth, et du logiciel de l'imprimante.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">IHM</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">Arduino</span>
+                                <span class="tag">Android</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/MobiBraille" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/nemesis.png" alt="Projet Nemesis" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">Nemesis</h3>
+                            <p>Un projet de drone réalisé en équipe de 4. J'ai géré la connection 4G et le streaming video du projet, jusqu'à l'affichage dans une web app.</p>
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">GStreamer</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/NemesisDrone/" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/soutien.png" alt="Projet SiDoBo" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">Bot Discord</h3>
+                            <p>Bot Discord pour réserver des créneaux horaire pour du soutien scolaire.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/SiDoBo" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="assets/projects/contacts.png" alt="Projet Contacts" class="project-image">
+                        <div class="project-details">
+                            <h3 class="project-title">Plateforme de contacts</h3>
+                            <p>Plateforme web pour gérer une liste de contacts.</p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/N1coc4colA/Contacts" target="_blank" class="btn btn-code">
+                                    <span class="btn-icon">&#60;/&#62;</span> Voir le code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 - Portfolio de Nicolas Badin | Tous droits réservés</p>
+            </div>
+        </footer>
+    </body>
+    <script src="scripts/main.js"></script>
 </html>
