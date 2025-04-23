@@ -98,6 +98,15 @@ nav {
     align-items: center;
 }
 
+.nav-btn {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-btn i {
+    font-size: 20pt;
+}
+
 .logo-container
 {
     width: var(--size-burger);
@@ -443,6 +452,14 @@ footer p {
     transform: rotate(15deg);
 }
 
+.display {
+    display: block !important;
+}
+
+.show-small {
+    display: none;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
@@ -453,6 +470,12 @@ footer p {
 
     .social-links {
         justify-content: center;
+    }
+
+    .nav-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-links {

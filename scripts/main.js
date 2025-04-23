@@ -4,6 +4,15 @@ const navLinks = document.querySelectorAll('.nav-link');
 const easyLinks = document.querySelectorAll('.easy-link');
 const sections = document.querySelectorAll('section');
 
+const nbtn = document.getElementById("nav-btn");
+const container = document.getElementById("nav-ctr");
+
+nbtn.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    container.classList.toggle('display');
+});
+
 easyLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
